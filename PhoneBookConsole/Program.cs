@@ -24,8 +24,7 @@ namespace PhoneBookConsole
                     Console.Write("Contact name: ");
                     var name = Console.ReadLine();
                     Console.Write("Contact numer: ");
-                    var number = Console.ReadLine(); 
-
+                    var number = Console.ReadLine();
                     break;
                 case "2":
                     break;
