@@ -34,10 +34,17 @@ namespace PhoneBookConsole
                         phoneBook.AddContact(newContact);
                         break;
                     case "2":
+                        Console.Write("Contact number to search ");
+                        var searchNumber = Console.ReadLine();
+                        phoneBook.DisplayContact(searchNumber); 
                         break;
                     case "3":
+                        phoneBook.DisplayAllContact(); 
                         break;
                     case "4":
+                        Console.Write("Name Search: ");
+                        var searchPhrase = Console.ReadLine();
+                        phoneBook.DisplayMatchingContact(searchPhrase); 
                         break;
                     case "Exit":
                         return;
@@ -45,7 +52,7 @@ namespace PhoneBookConsole
                         Console.WriteLine("Select valid operation");
                         break;
                 }
-                Console.Write("Select Operation: ");
+                Console.Write("Please Enter your Seleciton: ");
                 userInput = Console.ReadLine(); 
             }
 
