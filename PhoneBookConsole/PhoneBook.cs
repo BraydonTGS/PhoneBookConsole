@@ -7,7 +7,7 @@ namespace PhoneBookConsole
     public class PhoneBook
     {
         // Creating a list //
-        private List<Contact> _contacts { get; set; }
+        private List<Contact> _contacts { get; set; } = new List<Contact>(); 
 
         // Private method for displaying contacts // 
         private void DisplayContactDetails(Contact contact)
